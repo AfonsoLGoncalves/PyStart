@@ -5,7 +5,6 @@ print("Bem vindo ao jogo de adivinhação!")
 print("*********************************")
 
 numeroSecreto = round(random.randrange(1, 51))  # Randomiza número de 1 a 50
-print(numeroSecreto)
 totalDeTentativas = 0
 rodada = 1
 pontos = 500
