@@ -28,6 +28,7 @@ def jogar():
                 print("Modo difícil selecionado")
                 totalDeTentativas = 5
 
+
     for rodada in range(1, totalDeTentativas + 1):
         palpite = int(input("Digite um número entre 1 a 50: "))
         print("Tentativa {} de {}".format(rodada, totalDeTentativas))  # String Interpolação
