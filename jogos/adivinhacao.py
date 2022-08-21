@@ -14,6 +14,7 @@ def jogar():
     print("(1) Fácil\n(2) Médio\n(3) Difícil")
     nivel = int(input("Defina um nível: "))
 
+
     if (nivel < 0 or nivel > 3):
         print("Digite um número válido")
     else:
