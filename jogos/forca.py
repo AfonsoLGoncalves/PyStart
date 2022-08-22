@@ -4,6 +4,10 @@ def jogar():
     print("*********************************")
 
     palavra_secreta = "banana"
+    letras_acertadas = ["_", "_", "_", "_", "_", "_"]
+    print(letras_acertadas)
+
+    # Condicionais
     enforcou = False
     acertou = False
 
@@ -15,13 +19,12 @@ def jogar():
         index = 0
         for letra in palavra_secreta:
             if (palpite.upper() == letra.upper()):
-                print("Encontrei a letra {} na posição {}".format(letra, index))
-
+                letras_acertadas[index] = letra
             index = index + 1
-        print("Jogando ...")
-
+        print(letras_acertadas)
 
     print("Fim do jogo")
 
-if(__name__ == "__main__"):
+
+if (__name__ == "__main__"):
     jogar()
