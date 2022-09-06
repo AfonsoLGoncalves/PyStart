@@ -1,19 +1,50 @@
 """
 1. Faça um Programa que peça dois números e imprima o maior deles.
 """
+def maior_numero(x, y):
+    if x > y:
+        return print(x)
+    else:
+        return print(y)
+
 
 """
 2. Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo.
 """
+def positivo_ou_negativo (x):
+    if x < 0:
+        return print("Valor negativo")
+    else:
+        return print("Valor positivo")
+
 
 """
 3. Faça um Programa que verifique se uma letra digitada é "F" ou "M". Conforme a letra escrever: F - Feminino, 
 M - Masculino, Sexo Inválido.
 """
+def masculino_ou_feminino (sexo_valor):
+    if sexo_valor.lower() == "f":
+        return print("F = Feminino")
+    elif sexo_valor.lower() == "m":
+        return print("M = Masculino")
+    else:
+        return print("Sexo Inválido")
+
+
 
 """
 4. Faça um Programa que verifique se uma letra digitada é vogal ou consoante.
 """
+def eh_vogal_ou_consoante(letra):
+    vogal = ["a", "e", "i", "o", "u"]
+    i = 0
+    while i <= 4:
+        if letra.lower() == vogal[i]:
+            return print("vogal")
+        else:
+            return print("consoante")
+        i = i + 1
+
 
 """
 5. Faça um programa para a leitura de duas notas parciais de um aluno. O programa deve calcular a média alcançada 
