@@ -57,6 +57,13 @@ A mensagem "Aprovado com Distinção", se a média for igual a dez.
 """
 6. Faça um Programa que leia três números e mostre o maior deles.
 """
+def maior_numero(x,y,z):
+    if x >= y and x >= z:
+        return print(x)
+    elif y >= z and y >= x:
+        return print(y)
+    else:
+        return print(z)
 
 """
 7. Faça um Programa que leia três números e mostre o maior e o menor deles.
