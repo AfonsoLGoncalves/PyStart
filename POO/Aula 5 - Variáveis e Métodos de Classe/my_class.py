@@ -6,19 +6,22 @@ class MinhaClasse:
         self.estado = estado
 
     def print_estatico(self):
-        estatico = 3
-        print(estatico)
+        print(self.estatico)
+
+    @classmethod
+    def mudar_estatico(cls):
+        cls.estatico = "Programador"    # == MinhaClasse.estatico = "Programador"
+
+
 
 obj1 = MinhaClasse(True)
 obj2 = MinhaClasse(False)
 
-MinhaClasse.estatico = "Programador" # Mudança contexto da classe
-obj1.estatico = "Lhama"              # Mudança contexto do objeto
+# Mudando o contexto de classe
+obj1.mudar_estatico()
 
-
-print(obj1.estatico)            # Acesso contexto do objeto
-print(obj2.estatico)            # Acesso contexto do objeto
-print(MinhaClasse.estatico)     # Acesso contexto da classe
-
-
+# Mudança repercurti para todos os objetos da Classe
 obj1.print_estatico()
+obj2.print_estatico()
+
+print(MinhaClasse.estatico)
