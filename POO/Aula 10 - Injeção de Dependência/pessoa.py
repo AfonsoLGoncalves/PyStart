@@ -29,4 +29,3 @@ class Pessoa:
 minha_casa = Casa()
 ana = Pessoa("Ana", minha_casa)
 ana.apresentar_local()
-ana
