@@ -1,32 +1,14 @@
-class PessoaA:
+from models import Insersor, Repositorio
 
-    def se_apresentar(self):
-        print("Olá, sou a pessoa A")
-
-
-class PessoaB(PessoaA):
-
+class RepositorioFaker(Repositorio):
     def __init__(self):
         super().__init__()
 
-    # Isso aqui se trata de polimorfismo
-    def se_apresentar(self):
-        print("Estou alterando esse método")
+    def select(self, name: int) -> None:
+        return None
 
+repo = RepositorioFaker()
+insersor = Insersor(repo)
 
-class PessoaC(PessoaB):
-
-    def __init__(self):
-        super().__init__()
-
-    def se_apresentar(self):
-        print("testando polimorfismo")
-
-pessoa = PessoaA()
-pessoa.se_apresentar()
-
-pessoa = PessoaB()
-pessoa.se_apresentar()
-
-pessoaC = PessoaC()
-pessoaC.se_apresentar()
+data = insersor.inserir_dados("Afonso", 25)
+print(data)
